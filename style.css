@@ -1,0 +1,14 @@
+:root{--bg:#14181f;--panel:#1d2330;--ink:#f1e8d4;--mute:#8d96a8;--lt:#e9dfc7;--dk:#3f6b5a;--hi:#e8c36a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Georgia,serif}
+button,input{font:inherit}button{background:var(--dk);color:#fff;border:0;padding:.5rem 1rem;border-radius:6px;cursor:pointer}button:focus-visible,input:focus-visible{outline:2px solid var(--hi)}
+button.alt{background:#2c3446}input{background:#0f131a;color:var(--ink);border:1px solid #2c3446;padding:.5rem;border-radius:6px;width:100%;margin:.25rem 0}
+header{display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;background:var(--panel)}header h1{margin:0;font-size:1.8rem;letter-spacing:.04em}
+main{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;padding:1.5rem 2rem;max-width:1100px;margin:auto}
+.card{background:var(--panel);padding:1.25rem;border-radius:10px}.card h2{margin-top:0;font-size:1.1rem}
+.row{display:flex;justify-content:space-between;align-items:center;gap:.5rem;padding:.35rem 0;border-bottom:1px solid #2c3446}
+#game{display:grid;justify-items:center;gap:1rem;padding:1.5rem}
+#board{display:grid;grid-template-columns:repeat(8,1fr);width:min(92vw,560px);aspect-ratio:1;border:6px solid #2c3446;border-radius:6px}
+.sq{background:var(--lt);display:grid;place-items:center;position:relative;cursor:pointer}.sq.d{background:var(--dk)}
+.sq.sel{outline:4px solid var(--hi);outline-offset:-4px}.sq.mv::after{content:"";width:28%;aspect-ratio:1;border-radius:50%;background:#e8c36a99;position:absolute}
+.pc{width:88%;pointer-events:none}
+.hide{display:none!important}.err{color:#ff8a80}

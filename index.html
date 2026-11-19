@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Decks</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"></head><body>
+<header><h1><img src="Images/logo.svg" alt="" width="28" height="28"> Decks</h1><div id="who"></div></header>
+<main id="auth" class="card"><h2>Sign in to play</h2><input id="em" placeholder="Email" type="email"><input id="pw" placeholder="Password" type="password"><input id="un" placeholder="Username (sign up only)"><p><button id="in">Log in</button> <button id="up" class="alt">Sign up</button></p><p id="msg" class="err"></p></main>
+<main id="lobby" class="hide">
+<section class="card"><h2>Play</h2><button id="quick">Find an opponent</button><h2 style="margin-top:1.5rem">Your games</h2><div id="games"></div></section>
+<section class="card"><h2>Friends</h2><input id="fname" placeholder="Add friend by username"><button id="fadd">Send request</button><div id="reqs"></div><div id="friends"></div></section></main>
+<section id="game" class="hide"><div id="info"></div><div id="board"></div><button id="back" class="alt">Back to lobby</button></section>
+<script type="module" src="app.js"></script></body></html>
